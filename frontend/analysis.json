@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "komoditas_id": 1653,
+    "commodity_category": "VOLATIL",
+    "analysis_date": "2025-09-17T17:00:00.000000Z",
+    "data_freshness": "2025-09-17T17:00:00.000000Z",
+    "analysis_confidence": "HIGH",
+    "condition_level": "BERGEJOLAK",
+    "volatility_index": 27.05,
+    "trend_direction": "TURUN",
+    "statistical_significance": "SIGNIFIKAN",
+    "key_observation": "Harga Bawang Merah mengalami penurunan signifikan secara mingguan dan bulanan, menempatkannya jauh di bawah rata-rata historis 90 hari dengan volatilitas tinggi.",
+    "current_position": "Harga saat ini (Rp 40.000) berada 16.71% di bawah rata-rata harga 90 hari (Rp 48.022), mengindikasikan posisi yang lebih rendah dari historis jangka pendek.",
+    "price_pattern": "Teridentifikasi pola penurunan harga yang tajam dan konsisten secara mingguan (-20.00%) dan bulanan (-41.18%), setelah sebelumnya mencapai harga tertinggi Rp 70.000.",
+    "volatility_analysis": "Komoditas Bawang Merah menunjukkan tingkat volatilitas harga yang tinggi dengan Coefficient of Variation (CV) sebesar 27.05% dalam 90 hari terakhir, yang mengindikasikan fluktuasi harga yang substansial.",
+    "trend_analysis": "Tren harga Bawang Merah menunjukkan penurunan yang kuat dan konsisten dalam periode mingguan dan bulanan, menjauh dari rata-rata historis 90 hari.",
+    "deviation_percentage": -16.71,
+    "deviation_interpretation": "Harga saat ini berada 16.71% di bawah rata-rata harga 90 hari, menunjukkan deviasi signifikan di bawah level harga normal jangka pendek.",
+    "volatility_level": "TINGGI",
+    "volatility_cv_interpretation": "Nilai Coefficient of Variation 27.05% mengindikasikan bahwa Bawang Merah adalah komoditas dengan volatilitas harga yang tinggi, rentan terhadap perubahan signifikan.",
+    "trend_strength": "KUAT",
+    "trend_consistency": "KONSISTEN",
+    "short_term_outlook": "Berdasarkan tren penurunan yang kuat dan konsisten dalam seminggu terakhir, ada indikasi potensi harga tetap rendah atau melanjutkan penurunan dalam 1-7 hari ke depan, namun dapat berbalik arah mengingat volatilitas tinggi komoditas ini.",
+    "pattern_sustainability": "Meskipun terjadi penurunan tajam, komoditas yang volatil seperti Bawang Merah dapat memiliki pola penurunan yang tidak selalu berkelanjutan dalam jangka panjang; rebound harga mungkin terjadi seiring perubahan faktor pasar atau intervensi.",
+    "external_factors_note": "Analisis ini tidak mempertimbangkan secara langsung faktor eksternal seperti kebijakan pemerintah, bencana alam, isu geopolitik, atau perubahan daya beli masyarakat, kecuali jika secara implisit tercermin dalam pergerakan harga yang ada.",
+    "created_at": "2025-09-18T09:58:25.000000Z",
+    "updated_at": "2025-09-18T09:58:25.000000Z",
+    "komoditas": {
+      "id": 1653,
+      "id_komoditas": "10",
+      "nama": "Bawang Merah,1 kg",
+      "created_at": "2025-06-09T21:08:30.000000Z",
+      "updated_at": "2025-06-09T21:08:30.000000Z"
+    },
+    "data_based_alerts": [
+      {
+        "id": 9,
+        "analisis_harga_id": 1,
+        "content": "Penurunan harga mingguan -20.00% menempatkan kondisi harga pada level 'BERGEJOLAK' sesuai framework analisis.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 10,
+        "analisis_harga_id": 1,
+        "content": "Posisi harga saat ini 16.71% di bawah rata-rata 90 hari menunjukkan potensi tekanan pasokan atau permintaan yang signifikan.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 11,
+        "analisis_harga_id": 1,
+        "content": "Tingginya Coefficient of Variation (27.05%) mengindikasikan risiko fluktuasi harga yang cepat di masa mendatang.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ],
+    "monitoring_suggestions": [
+      {
+        "id": 13,
+        "analisis_harga_id": 1,
+        "content": "Memantau secara ketat perkembangan harga harian dan faktor-faktor pemicu penurunan seperti potensi surplus pasokan atau penurunan permintaan.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 14,
+        "analisis_harga_id": 1,
+        "content": "Mengevaluasi stok dan pola distribusi Bawang Merah di pasar lokal Kabupaten Mempawah.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 15,
+        "analisis_harga_id": 1,
+        "content": "Menganalisis data harga dari daerah produsen utama untuk mengidentifikasi penyebab penurunan yang berlanjut.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ],
+    "pattern_implications": [
+      {
+        "id": 10,
+        "analisis_harga_id": 1,
+        "content": "Penurunan harga yang signifikan dapat mengindikasikan adanya surplus pasokan di pasar atau penurunan daya beli/permintaan konsumen.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 11,
+        "analisis_harga_id": 1,
+        "content": "Implikasi bagi petani dapat berupa penurunan pendapatan jika harga jual terus berada di bawah rata-rata biaya produksi.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ],
+    "key_metrics_to_watch": [
+      {
+        "id": 16,
+        "analisis_harga_id": 1,
+        "content": "Perubahan harga harian dan mingguan untuk mendeteksi pembalikan tren atau stabilisasi.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 17,
+        "analisis_harga_id": 1,
+        "content": "Volume transaksi di pasar untuk mengukur dinamika penawaran dan permintaan riil.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 18,
+        "analisis_harga_id": 1,
+        "content": "Harga di tingkat produsen/petani untuk memantau keberlanjutan pasokan dan potensi dampak pada produksi mendatang.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ],
+    "data_quality_notes": [
+      {
+        "id": 10,
+        "analisis_harga_id": 1,
+        "content": "Data yang disediakan konsisten dan mencakup metrik kunci yang diperlukan untuk analisis.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ],
+    "additional_data_suggestions": [
+      {
+        "id": 15,
+        "analisis_harga_id": 1,
+        "content": "Data volume produksi dan panen Bawang Merah, terutama dari sentra produksi yang memasok ke Mempawah.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 16,
+        "analisis_harga_id": 1,
+        "content": "Informasi tentang kondisi cuaca di daerah produsen yang dapat mempengaruhi panen dan distribusi.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 17,
+        "analisis_harga_id": 1,
+        "content": "Data harga di tingkat distributor/grosir untuk gambaran lengkap rantai pasok.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ],
+    "statistical_warnings": [
+      {
+        "id": 8,
+        "analisis_harga_id": 1,
+        "content": "Peringatan: Penurunan tajam dan konsisten menunjukkan tekanan signifikan pada pasar yang perlu diperhatikan.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 9,
+        "analisis_harga_id": 1,
+        "content": "Peringatan: Volatilitas tinggi meningkatkan ketidakpastian pergerakan harga di masa depan, baik potensi penurunan lebih lanjut maupun potensi rebound cepat.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ],
+    "data_constraints": [
+      {
+        "id": 11,
+        "analisis_harga_id": 1,
+        "content": "Analisis tidak menyertakan data volume penjualan atau pasokan aktual di pasar Sebukit Rama.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 12,
+        "analisis_harga_id": 1,
+        "content": "Data historis yang disediakan terbatas pada profil 90 hari terakhir.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ],
+    "assumptions_made": [
+      {
+        "id": 11,
+        "analisis_harga_id": 1,
+        "content": "Asumsi bahwa data harga yang disediakan akurat dan representatif untuk Pasar Sebukit Rama pada tanggal yang disebutkan.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 12,
+        "analisis_harga_id": 1,
+        "content": "Asumsi bahwa kategorisasi komoditas Bawang Merah sebagai 'VOLATIL' adalah tepat berdasarkan karakteristik pasar.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "komoditas_id": 1661,
+    "commodity_category": "PENTING",
+    "analysis_date": "2025-09-17T17:00:00.000000Z",
+    "data_freshness": "2025-09-17T17:00:00.000000Z",
+    "analysis_confidence": "HIGH",
+    "condition_level": "BERGEJOLAK",
+    "volatility_index": 3.92,
+    "trend_direction": "TURUN",
+    "statistical_significance": "SIGNIFIKAN",
+    "key_observation": "Harga telur ayam ras mengalami penurunan signifikan secara mingguan dan bulanan, serta berada di bawah rata-rata harga 90 hari. Meskipun demikian, volatilitas historisnya tergolong rendah.",
+    "current_position": "Harga saat ini Rp 29.000 berada 5.98% di bawah rata-rata harga 90 hari (Rp 30.844), mengindikasikan posisi harga yang lebih rendah dari level historis jangka menengah.",
+    "price_pattern": "Teridentifikasi pola penurunan harga yang konsisten dalam satu minggu terakhir sebesar -6.45% dan satu bulan terakhir sebesar -9.38%.",
+    "volatility_analysis": "Tingkat volatilitas (Coefficient of Variation) dalam 90 hari terakhir sangat rendah, yaitu 3.92%. Hal ini menunjukkan bahwa, secara historis, fluktuasi harga telur ayam ras cenderung stabil.",
+    "trend_analysis": "Analisis data menunjukkan tren penurunan harga yang kuat dan konsisten baik dalam periode mingguan maupun bulanan.",
+    "deviation_percentage": -5.98,
+    "deviation_interpretation": "Harga saat ini lebih rendah 5.98% dari rata-rata harga 90 hari, menunjukkan posisi harga di bawah level historis jangka menengah. Ini sesuai dengan kriteria fluktuatif hingga bergejolak untuk komoditas pokok (5-10% di bawah rata-rata).",
+    "volatility_level": "RENDAH",
+    "volatility_cv_interpretation": "Nilai Coefficient of Variation sebesar 3.92% mengindikasikan bahwa harga telur ayam ras memiliki tingkat volatilitas yang sangat rendah dalam periode 90 hari terakhir, menempatkannya pada kategori stabil dalam volatilitas.",
+    "trend_strength": "KUAT",
+    "trend_consistency": "KONSISTEN",
+    "short_term_outlook": "Berdasarkan tren penurunan yang kuat dan konsisten, harga telur ayam ras kemungkinan akan tetap berada di level rendah atau melanjutkan penurunannya dalam 1-7 hari ke depan, kecuali ada intervensi pasar atau perubahan signifikan pada faktor penawaran/permintaan.",
+    "pattern_sustainability": "Tren penurunan harga mingguan dan bulanan menunjukkan pola yang cukup berkelanjutan dalam jangka pendek hingga menengah. Namun, volatilitas historis yang rendah mungkin akan membatasi seberapa jauh penurunan ini dapat berlanjut dalam jangka panjang.",
+    "external_factors_note": "Analisis ini fokus pada pola statistik harga yang tersedia dan tidak mempertimbangkan faktor eksternal seperti kebijakan pemerintah, bencana alam, wabah penyakit pada ternak, atau perubahan daya beli masyarakat, karena informasi tersebut tidak tersedia dalam data input.",
+    "created_at": "2025-09-18T09:58:25.000000Z",
+    "updated_at": "2025-09-18T09:58:25.000000Z",
+    "komoditas": {
+      "id": 1661,
+      "id_komoditas": "18",
+      "nama": "Telur Ayam Ras,1 kg",
+      "created_at": "2025-06-09T21:08:30.000000Z",
+      "updated_at": "2025-06-09T21:08:30.000000Z"
+    },
+    "data_based_alerts": [
+      {
+        "id": 12,
+        "analisis_harga_id": 2,
+        "content": "Penurunan harga mingguan sebesar -6.45% dan bulanan -9.38% adalah signifikan dan perlu diwaspadai sebagai indikator ketidakseimbangan pasar.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 13,
+        "analisis_harga_id": 2,
+        "content": "Posisi harga saat ini yang berada 5.98% di bawah rata-rata 90 hari mengindikasikan pergeseran level harga ke bawah.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ],
+    "monitoring_suggestions": [
+      {
+        "id": 16,
+        "analisis_harga_id": 2,
+        "content": "Memantau lebih lanjut data pasokan dan permintaan telur ayam ras untuk mengidentifikasi pemicu penurunan harga ini.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 17,
+        "analisis_harga_id": 2,
+        "content": "Mengidentifikasi apakah penurunan harga ini disebabkan oleh peningkatan pasokan dari produsen atau penurunan daya beli konsumen di tingkat lokal.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 18,
+        "analisis_harga_id": 2,
+        "content": "Membandingkan harga dengan daerah sentra produksi atau pasar lain untuk melihat disparitas harga dan efisiensi distribusi.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ],
+    "pattern_implications": [
+      {
+        "id": 12,
+        "analisis_harga_id": 2,
+        "content": "Pola penurunan harga yang konsisten dapat berimplikasi pada potensi kerugian bagi peternak dan distributor jika harga terus bertahan di level rendah.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 13,
+        "analisis_harga_id": 2,
+        "content": "Penurunan harga dapat menguntungkan konsumen, namun perlu diperhatikan keberlanjutan pasokan jika produsen menghadapi tantangan finansial.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ],
+    "key_metrics_to_watch": [
+      {
+        "id": 19,
+        "analisis_harga_id": 2,
+        "content": "Perubahan harga harian untuk mendeteksi potensi pembalikan atau kelanjutan tren.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 20,
+        "analisis_harga_id": 2,
+        "content": "Data volume transaksi di Pasar Sebukit Rama jika tersedia, untuk analisis penawaran dan permintaan.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 21,
+        "analisis_harga_id": 2,
+        "content": "Informasi mengenai biaya produksi (pakan, bibit) bagi peternak telur ayam ras.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ],
+    "data_quality_notes": [
+      {
+        "id": 11,
+        "analisis_harga_id": 2,
+        "content": "Data harga tunggal dari Pasar Sebukit Rama diasumsikan representatif untuk Kabupaten Mempawah.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 12,
+        "analisis_harga_id": 2,
+        "content": "Tidak ada data volume transaksi yang disertakan, sehingga analisis kekuatan penawaran/permintaan secara langsung terbatas.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ],
+    "additional_data_suggestions": [
+      {
+        "id": 18,
+        "analisis_harga_id": 2,
+        "content": "Data harga historis yang lebih panjang (misal, 1-2 tahun) untuk analisis pola musiman yang lebih akurat.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 19,
+        "analisis_harga_id": 2,
+        "content": "Data mengenai jumlah pasokan dan distribusi telur ayam ras di tingkat Kabupaten Mempawah.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ],
+    "statistical_warnings": [
+      {
+        "id": 10,
+        "analisis_harga_id": 2,
+        "content": "Penurunan harga yang cepat (mingguan -6.45%) perlu diwaspadai agar tidak menimbulkan dampak negatif yang signifikan pada sisi produsen.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 11,
+        "analisis_harga_id": 2,
+        "content": "Meskipun volatilitas historis rendah, pergerakan harga yang saat ini berada di luar rentang normal mengindikasikan potensi ketidakseimbangan pasar yang perlu diatasi.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ],
+    "data_constraints": [
+      {
+        "id": 13,
+        "analisis_harga_id": 2,
+        "content": "Analisis didasarkan pada data harga tunggal dari satu pasar, yang mungkin tidak mencerminkan seluruh dinamika harga di seluruh Kabupaten Mempawah.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 14,
+        "analisis_harga_id": 2,
+        "content": "Keterbatasan data historis (90 hari) membatasi analisis pola musiman dan tren jangka panjang yang lebih komprehensif.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 15,
+        "analisis_harga_id": 2,
+        "content": "Ketiadaan data volume perdagangan membatasi analisis kuantitatif terhadap penawaran dan permintaan.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ],
+    "assumptions_made": [
+      {
+        "id": 13,
+        "analisis_harga_id": 2,
+        "content": "Komoditas 'Telur Ayam Ras, 1 kg' diasumsikan memiliki karakteristik volatilitas seperti komoditas pokok pangan dalam konteks klasifikasi kondisi harga, mengingat nilai CV yang rendah.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      },
+      {
+        "id": 14,
+        "analisis_harga_id": 2,
+        "content": "Semua data harga yang disediakan diasumsikan akurat dan representatif untuk periode yang ditentukan.",
+        "created_at": "2025-09-18T10:14:28.000000Z",
+        "updated_at": "2025-09-18T10:14:28.000000Z"
+      }
+    ]
+  }
+]

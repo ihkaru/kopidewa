@@ -1,0 +1,43 @@
+# Generic
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+!.env.example
+
+# Backend (Laravel)
+backend/vendor/
+backend/node_modules/
+backend/public/storage
+backend/public/hot
+backend/storage/*.key
+backend/storage/framework/cache/data/*
+backend/storage/framework/sessions/*
+backend/storage/framework/testing/*
+backend/storage/framework/views/*
+backend/storage/logs/*
+backend/bootstrap/cache/*
+backend/.phpunit.result.cache
+
+# Frontend (Node/Quasar)
+frontend/node_modules/
+frontend/.quasar/
+frontend/dist/
+frontend/.vscode/
+frontend/jsconfig.json
+frontend/package-lock.json
+frontend/yarn.lock
+frontend/pnpm-lock.yaml
+frontend/node_modules
+frontend/.DS_Store
+frontend/dist
+frontend/.quasar
+frontend/src-pwa/www
+frontend/src-cordova/platforms
+frontend/src-cordova/plugins
+frontend/src-cordova/www
+frontend/src-capacitor/www
+frontend/src-capacitor/ios
+frontend/src-capacitor/android
+frontend/.testcaferc.json
