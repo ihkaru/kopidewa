@@ -60,15 +60,16 @@ npm run dev
 
 ---
 
-## 🛠️ Stack Teknologi
+## 🛠️ Stack Teknologi & Integrasi API
 
-| Komponen | Teknologi |
+| Komponen / API | Teknologi / Layanan |
 | :--- | :--- |
 | **Backend Framework** | Laravel 11.x (PHP 8.2) |
 | **Frontend Framework** | Vue.js 3 (Composition API) |
 | **UI Kit** | Quasar Framework (Material Design) |
 | **Database** | MySQL / PostgreSQL |
-| **State Management** | Pinia |
+| **Data Ingestion API** | SP2KP Kementerian Perdagangan (Interoperabilitas Data) |
+| **AI Analyst API** | Gemini-3-Flash (via OpenAI-compatible Custom Endpoint) 👉 [Lihat Dokumentasi AI](./docs/gemini.md) |
 | **Analysis / Stats** | Coefficient of Variation, Visual Crossing Weather API |
 
 ---
