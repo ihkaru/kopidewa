@@ -14,12 +14,13 @@ Tujuan utama dari inovasi ini adalah untuk berpindah dari metode pengumpulan dat
 
 ### II. SPESIFIKASI TEKNIS INTEGRASI (INTEROPERABILITAS)
 
-#### 1. Mekanisme Ingestion Data SP2KP
+#### 1. Mekanisme Ingestion Data SP2KP & Multi-Source Integration
 Sistem Kopidewa tidak menggunakan input manual. Sebaliknya, sistem menggunakan **Automated Data Ingestion Engine** (via n8n Workflow) yang melakukan sinkronisasi dengan portal **SP2KP (Sistem Pemantauan Pasar dan Kebutuhan Pokok) Kementerian Perdagangan**.
-*   **Istilah Teknis:** *Automated Interoperability Interface*.
+*   **Istilah Teknis:** *Automated Interoperability Interface* & *Multi-Source Big Data Analytics*.
 *   **Frekuensi:** Sinkronisasi harian (Daily Real-time Sync) setiap pukul 08.00 WIB.
 *   **Protokol:** HTTP Request Integration yang menjamin integritas data sesuai dengan sumber otoritas pusat.
-*   **Keunggulan:** Menjamin **Data Consistency** antara laporan tingkat Pusat (Kemendag) dan laporan tingkat Daerah (Pemkab Mempawah).
+*   **Korelasi Iklim (Weather Integration):** Sistem mengawinkan data harga dari SP2KP dengan **Data Historis Cuaca (Visual Crossing API)**. AI tidak sekadar menganalisis harga, tetapi juga mengevaluasi apakah fluktuasi harga hortikultura dipengaruhi oleh anomali cuaca (misal: tingginya curah hujan yang mengganggu distribusi panen).
+*   **Keunggulan:** Menjamin **Data Consistency** antara laporan tingkat Pusat (Kemendag) dan laporan tingkat Daerah (Pemkab Mempawah), serta menyajikan analisis kausalitas yang lebih komprehensif.
 
 #### 2. Implementasi Artificial Intelligence (AI Agent)
 Kopidewa menggunakan **AI Agent (Gemini-3-Flash)** yang berperan sebagai **Senior Statistical Analyst**. Implementasi ini mencakup:
