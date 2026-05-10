@@ -113,6 +113,34 @@ Berikut adalah gambaran nyata data yang dikelola sistem:
 
 ---
 
+## 🤖 Integrasi n8n & AI Analysis
+
+Sistem ini mendukung otomatisasi analisis menggunakan n8n. Kami menyediakan template workflow yang bisa langsung di-import.
+
+### 1. Konfigurasi Domain
+Anda bisa mengatur domain di file `.env` agar tidak perlu mengetiknya setiap saat:
+
+```env
+# apps/backend/.env
+N8N_BACKEND_URL=https://harga-api.anda.com
+N8N_AI_BASE_URL=https://ai.dvlpid.my.id/v1
+```
+
+Setelah itu, jalankan script tanpa argumen:
+
+```bash
+# Di dalam folder apps/backend
+./generate-n8n-workflow.sh
+```
+
+### 2. Cara Import ke n8n
+1. Jalankan script di atas dan copy output JSON-nya.
+2. Buka dashboard n8n Anda.
+3. Buat workflow baru dan tekan `Ctrl+V` (Paste).
+4. Konfigurasi kredensial OpenAI Anda pada node "OpenAI Chat Model".
+
+---
+
 ## 🤝 Berkontribusi
 
 Kami sangat terbuka dengan kontribusi dari pengembang di seluruh Indonesia!

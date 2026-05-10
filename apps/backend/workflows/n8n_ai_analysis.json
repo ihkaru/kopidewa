@@ -1,0 +1,182 @@
+{
+  "name": "Kopidewa AI Agent Workflow 2026",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "minutes": 0,
+              "hours": 7
+            }
+          ]
+        }
+      },
+      "id": "e8a93941-864a-446a-810a-3c482c300f86",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [380, 300]
+    },
+    {
+      "parameters": {
+        "url": "__BACKEND_URL__/api/tpid/report/top-movers",
+        "options": {}
+      },
+      "id": "b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+      "name": "Fetch Prompts from Backend",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [600, 300]
+    },
+    {
+      "parameters": {
+        "promptType": "defineBelow",
+        "text": "={{ $json.prompt_analisis }}",
+        "options": {
+          "systemMessage": "You are a Senior TPID (Regional Inflation Control Team) Analyst for Kabupaten Mempawah. Your task is to provide strategic, data-driven analysis based on price movements. Always output in valid JSON as per the requested schema."
+        }
+      },
+      "id": "agent-node-id",
+      "name": "AI Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.6,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "model": "gemini-3-flash",
+        "options": {
+          "baseURL": "__AI_BASE_URL__",
+          "temperature": 0.2,
+          "responseFormat": "json_object"
+        }
+      },
+      "id": "openai-model-id",
+      "name": "OpenAI Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1,
+      "position": [750, 520],
+      "credentials": {
+        "openAiApi": {
+          "id": "YOUR_OPENAI_CREDENTIAL_ID",
+          "name": "Self-Hosted AI API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionId": "={{ \"kopidewa-daily-analysis\" }}",
+        "contextWindowLength": 5
+      },
+      "id": "memory-id",
+      "name": "Window Buffer Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.2,
+      "position": [950, 520]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Aggregate all items into a single request body\nconst allData = items.map(item => {\n  let aiOutput = item.json.output;\n\n  if (typeof aiOutput === 'string') {\n    // Clean markdown code blocks if present\n    aiOutput = aiOutput.replace(/```json\\n?|```/g, '').trim();\n  }\n\n  try {\n    return (typeof aiOutput === 'string') ? JSON.parse(aiOutput) : aiOutput;\n  } catch (e) {\n    return { error: \"Invalid JSON from AI Agent\", message: e.message, raw: aiOutput };\n  }\n});\n\nreturn [{ json: { data: allData } }];"
+      },
+      "id": "transform-id",
+      "name": "Transform to Backend Schema",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1150, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "__BACKEND_URL__/api/analisis-harga",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "data",
+              "value": "={{ $json.data }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "post-id",
+      "name": "Post Analysis to Backend",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1450, 300]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Fetch Prompts from Backend",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Prompts from Backend": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Window Buffer Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Transform to Backend Schema",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transform to Backend Schema": {
+      "main": [
+        [
+          {
+            "node": "Post Analysis to Backend",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}
