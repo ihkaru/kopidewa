@@ -20,7 +20,7 @@ Proses ini melibatkan beberapa antarmuka pemrograman aplikasi (API) berikut:
 
 ## 5. Prosedur Otomasi (Alur Kerja)
 ### 5.1. Penjadwalan (Scheduling)
-1. Sistem n8n dipicu secara otomatis (*cron-trigger*) setiap pukul 08:00 WIB.
+1. Sistem n8n dipicu secara otomatis (*cron-trigger*) 4 kali sehari (pukul 07:00, 09:00, 12:00, dan 17:00 WIB).
 2. Trigger ini memulai alur kerja (*workflow*) tanpa intervensi manual.
 
 ### 5.2. Ekstraksi Data (Data Ingestion)
